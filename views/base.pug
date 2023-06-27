@@ -1,0 +1,22 @@
+//- layout.pug\
+doctype html
+html
+  head
+    
+    block style 
+    block scripts
+  body
+    nav#navbar
+        ul 
+            div#logo 
+                img(src="../static/dance3.png", alt="") 
+                | KDA
+            li #[a(href="/") Home ]
+            li #[a(href="/") About ]
+            li #[a(href="/contact") Contact ]
+            li #[a(href="/") Policy]
+            li #[a(href="/") Classes Info ] 
+    block content
+    block footer 
+        section#footer 
+            copyright &copy; www.Khushal'sDanceAcademy.com All Rights Reserved    

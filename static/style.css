@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+/* navigation bar styling */
+/* logo styling  */
+#logo{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem ;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+}
+#logo img{
+    width: 2.5rem;
+    filter: invert();
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(17, 95, 241);
+    
+}
+#navbar ul{
+    display: flex;
+    padding: 0.8rem 1rem;
+    list-style:none;
+    align-items: center;
+}
+#navbar ul li a{
+    text-decoration: none;
+    margin: 1rem 1.4rem;
+    font-size: x-large;
+    color: bisque;
+    font-weight: bold;
+    font-family: 'Short Stack', cursive;
+    padding: 0.6rem 1rem;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+}
+/* home page desinging */
+#introsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    width: 100%;
+    color:bisque;
+ 
+   
+}
+
+#introsection div{
+    font-size: large;
+    padding-bottom: 16rem;
+}
+#introsection::before{
+    position: absolute;
+    content: "";
+    background: url("/static/bg.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+/* mission section  */
+#missionsection{
+    display: flex;
+    background-image: linear-gradient(dimgrey, black);
+    flex-direction: column;
+}
+#missionsection h1{
+    color: bisque;
+}
+
+/* card styling */
+.container{
+    display: flex;
+    padding: 0rem 0.7rem;
+    margin: auto;
+    flex-direction: row;
+}
+
+.card{
+
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient( red, yellow );
+    /* background-color: rgb(54, 207, 113) ; */
+    text-align: center;
+    margin: 1rem 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    width: 16rem;
+}
+.card p{
+    margin-top: 2rem;
+    font-size: 1.2rem;}
+.card img{
+    width: 7rem;
+
+    display: block;
+    margin:  0 auto 2rem auto;
+}
+/* sponser section  */
+#sponsersection{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 20rem;
+    background-image: linear-gradient(black, dimgrey);
+}
+#sponsersection h1{
+    margin-top: 1rem;
+    color: bisque;
+}
+#sponsers {
+    display: flex;
+    
+    /* align-items: centesa r; */
+    /* justify-content: center; */
+}
+#sponsers img{
+    height: 10rem;
+    margin: 2rem 2rem;
+}
+/* footer section  */
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* utility classes */
+.primary-h{
+    font-size: 3rem;
+}
+.secondary-h{
+    font-size: 2rem;
+}
+.center{
+    display: block;
+    margin: auto;
+    text-align: center;
+}

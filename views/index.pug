@@ -1,0 +1,49 @@
+//- index.pug
+doctype html
+html
+    head 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Short+Stack&family=Ubuntu&display=swap" rel="stylesheet">
+        style
+            include ../static/style.css
+        script(src="../static/index.js")
+    tiitle Khushal's Dance Academy
+    body 
+        nav#navbar
+            ul 
+                div#logo 
+                    img(src="../static/dance3.png", alt="") 
+                    | KDA
+                li #[a(href="/") Home ]
+                li #[a(href="/") About ]
+                li #[a(href="/") Contact ]
+                li #[a(href="/") Policy]
+                li #[a(href="/") Classes Info ]
+        section#introsection 
+            div.center 
+                h1.primary-h Welcome to Khushal's Dance Academy
+                h2 Dance Define Dancers 
+        section#missionsection 
+            h1(class="primary-h center ") Our Mission    
+            div.container 
+                div.card 
+                    img(src="../static/dance1.png", alt="")
+                    h1.secondary-h Expert Teaching
+                    p We provide best faculty for dancing. All teachers are very humble and experts in their danceforms. Students really like all teachers. 
+                div.card 
+                    img(src="../static/dance2.png", alt="")
+                    h1.secondary-h Win Competitions
+                    p Many competitions are organised for students in which dancers from various academies participate. Hence,Students develope competitive skills in dancing.
+                div.card 
+                    img(src="../static/dance4.png", alt="")
+                    h1.secondary-h Dance with fun 
+                    p We provide an extremely homelike environment. Thus,students feel free to share their thoughts and learning becomes more interactive.
+        section#sponsersection 
+            h1.primary-h Our Sponsers  
+            div#sponsers 
+                img(src="../static/hp_logo.png", alt="")
+                img(src="../static/lenovo-logo.png", alt="")
+                img(src="../static/mslogo.png", alt="")
+                img(src="../static/skypelogo.png", alt="")
+        
